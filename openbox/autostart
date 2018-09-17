@@ -1,0 +1,15 @@
+#openbox autostart
+
+
+tint2 &
+nm-applet &
+#pnmixer &
+
+#Add 1920x1080 resolution to xrandr
+xrandr --newmode "1920x1080_pbidwell"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
+xrandr --addmode eDP-1 "1920x1080_pbidwell"
+
+sleep 1 && display-toggle &
+
+start-pulseaudio-x11 && sleep 2s && volumeicon &
+
