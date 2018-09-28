@@ -183,4 +183,5 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 exec "~/bin/display-toggle"
 # urxvt colors
 exec "xrdb -merge ~/.Xresources"
+exec "nm-applet"
 

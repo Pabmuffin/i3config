@@ -11,5 +11,5 @@ xrandr --addmode eDP-1 "1920x1080_pbidwell"
 
 sleep 1 && display-toggle &
 
-start-pulseaudio-x11 && sleep 2s && volumeicon &
+start-pulseaudio-x11 & #&& sleep 2s && volumeicon &
 

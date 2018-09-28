@@ -393,6 +393,15 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>undock</name>
+        </startupnotify>
+        <command>undock</command>
+      </action>
+    </keybind>
     <!-- Aero snap keybindings -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
@@ -424,14 +433,26 @@
     </keybind>
     <keybind key="C-W-Left">
       <action name="MoveResizeTo">
-        <monitor>1</monitor>
+        <monitor>3</monitor>
       </action>
     </keybind>
     <keybind key="C-W-Right">
       <action name="MoveResizeTo">
-        <monitor>3</monitor>
+        <monitor>1</monitor>
       </action>
     </keybind>
+    <!-- Brightness -->
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>light -A 5</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>light -U 5</command>
+      </action>
+    </keybind>
+
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
